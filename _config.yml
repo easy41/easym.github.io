@@ -6,7 +6,6 @@
 # theme: jekyll-theme-prologue
 # collections: [sections]
 #
-remote_theme:jekyll-theme-prologue
 # They activate the theme and tell Jekyll to find your homepage content
 # in /_sections. Note where "sections" starts with an underscore
 # and where it doesn't. The social settings will make links to
@@ -30,7 +29,7 @@ remote_theme:jekyll-theme-prologue
 # These are used to personalize your new site. If you look in the HTML files,
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
+# in the templates via {{ site.myvariable }}. 
 title: Y_M
 subtitle: Can of sardines
 description: >- # this means to ignore newlines until "baseurl:"
@@ -57,5 +56,5 @@ twitter_url:
 google_analytics:
 
 # The following settings are NECESSARY for the Prologue theme to run:
-theme: jekyll-theme-prologue
+remote_theme: chrisbobbe/jekyll-theme-prologue
 collections: [sections]
