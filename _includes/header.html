@@ -1,15 +1,15 @@
-<header class="site-header">
-  <div class="container" style="text-align:center">
-    <div class="navbar" style="margin-bottom:0;border:0">
-    <ul class="navbar-nav nav header-nav">
-    <li><a href="{{ site.baseurl }}/index.html" class="button nav-button">Programming Blog</a></li>
-    <li><a href="{{ site.baseurl }}/review.html" class="button nav-button">Literature Review</a></li>
-    <li class="trigger">
-      <a href="{{ site.baseurl }}/fragments.html" class="button nav-button">Fragments</a>
-    </li>
-    </ul>
-    </div>
-  </div>
+{%- comment -%}
+  Include vars:
+  scrolly_nav
+{%- endcomment -%}
 
-</header>
-<div class="clearfix">
+<!-- Header -->
+<div id="header">
+  <div class="top">
+    {%- include logo.html -%}
+    {%- include nav.html section_items=include.scrolly_nav -%}
+  </div>
+  <div class="bottom">
+    {%- include social_icons.html -%}
+  </div>
+</div>
