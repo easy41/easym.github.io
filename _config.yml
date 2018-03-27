@@ -6,13 +6,13 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: easy_m
+title: easy41
 email: easy41@163.com
 description: > # this means to ignore newlines until "baseurl:"
   A profolio for an artical programmer.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://yourdomain.com" # the base hostname & protocol for your site
-github_username:  Easy_M
+github_username:  easy41
 
 # Gems settings
 gems: [jekyll-paginate]
