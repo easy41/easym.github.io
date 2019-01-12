@@ -1,10 +1,11 @@
 ---
 title: Reading
 subtitle: a list of books I read
-layout: "page"
+layout: blog
 icon: fa-book
 order: 3
 ---
+
 
 I love books! Here are some I'm reading now:
 
