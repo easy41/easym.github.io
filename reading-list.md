@@ -1,6 +1,6 @@
 ---
 title: Homepage
-layout: home
+layout: page
 icon: fa-home
 order: 1
 ---
