@@ -10,8 +10,20 @@ layout: default
 	{%- endif -%}
 	<!-- Sections -->
 	{%- for _section in _sections -%}
-		{%- include section.html title=_section.title photo=_section.cover-photo photo-alt=_section.cover-photo-alt auto-header=_section.auto-header content=_section.content -%}
+		<!--{%- include section.html title=_section.title photo=_section.cover-photo photo-alt=_section.cover-photo-alt auto-header=_section.auto-header content=_section.content -%}
+		-->
 	
+		{%- capture _title -%}
+			<a href="{{- _section.url | absolute_url -}}">{{- _section.title -}}</a>
+		{%- endcapture -%}
+		{%- capture _subtitle -%}
+			{% if _section.author -%}{{- _section.author }} | {% endif %}
+			{{- _section.date | date_to_long_string -}}
+		{%- endcapture -%}
+		{%- capture _excerpt -%}<p>{{- _section.excerpt | strip_html | truncatewords: 100 -}}</p>{%- endcapture -%}
+		{%- capture _link -%}<a href="{{- _section.url | absolute_url -}}">read more</a>{%- endcapture -%}
+		{%- assign _content = _excerpt | append: _link -%}
+		{%- include section.html title=_title subtitle=_subtitle content=_content -%}
 		{%- capture _excerpt -%}<p>{{- _section.excerpt | strip_html | truncatewords: 100 -}}</p>{%- endcapture -%}
 		{%- capture _link -%}<a href="{{- _section.url | absolute_url -}}">read more</a>{%- endcapture -%}
 		{%- assign _content = _excerpt | append: _link -%}
