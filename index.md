@@ -4,6 +4,6 @@
 # See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 layout: home
 title: SDGs reading
-icon: fa-home
+icon: fa-book
 order: 3
 ---
