@@ -1,8 +1,8 @@
 ---
-title: HomePage
-layout: "page"
-icon: fa-home
-order: 1
+title: SDGs Reading
+layout: home
+icon: fa-book
+order: 3
 ---
 
 
