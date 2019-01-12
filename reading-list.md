@@ -6,5 +6,3 @@ order: 3
 ---
 
 
-I love books! Here are some I'm reading now:
-
